@@ -5050,10 +5050,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base@^3.3.11:
-  version "3.3.11"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.11.tgz#c01929a504762adf02cf667af632f1ef2bd52696"
-  integrity sha512-fECEa0Ii0PEcww4AYj17tZfakgUhp+TkiqjZWuwyGXDZXMpjLXZIPdN80DJAx4RT1yk52GVa+mPoYcIWzE2hjw==
+native-base@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-3.3.7.tgz#4bff8d90709ee05a582546bec9359c06a75da33f"
+  integrity sha512-pX33+su3yssPvvIFbXGkexSA7S+UAhaTMlcaVTtg5mvIltoPn0du2CyxH7CIJeFmtX5kaxOvEwu//JPhoOU4AQ==
   dependencies:
     "@react-aria/focus" "^3.2.3"
     "@react-aria/utils" "^3.6.0"
