@@ -4,34 +4,38 @@
     "horizontal": true,
     "data": [
        {
-       
-       "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-oladimeji-ajegbile-2386687.jpg"
+       "page":"1",
+       "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-oladimeji-ajegbile-2386687.jpg",
+       "description": "這本輕小說真厲害!"
+
        
        },
        {
+         "page":"2",
+          "image2": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-dominika-roseclay-2208453.jpg",
+          "description": "這本書很好看!"
+       },
+       {
           
-          "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-dominika-roseclay-2208453.jpg"
+         "page":"3",
+          "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-dapurmelodi-1109197.jpg",
+          "description": "這本書很好看!"
+       },
+       {
+          
+          "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-polina-tankilevitch-4522999.jpg",
+          "description": "這本書很好看!"
+       },
+       {
          
-       },
-       {
-          
-          
-          "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-dapurmelodi-1109197.jpg"
-          
-       },
-       {
-          
-          "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-polina-tankilevitch-4522999.jpg"
-          
-       },
-       {
-         
-          "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/nefix.jpg"
+          "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/nefix.jpg",
+          "description": "這本書很好看!"
           
        },
        {
        
-        "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/billie-eilish.jpg"
+        "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/billie-eilish.jpg",
+        "description": "這本書很好看!"
       
      }
     ]}

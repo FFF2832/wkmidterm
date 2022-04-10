@@ -3,8 +3,6 @@ import {SectionList }from "react-native";
 import { Text, FlatList,Center,Pressable} from "native-base";
 import HomeDetail from "./HomeDetail";
 import sections from "../json/type_section.json";
-// import { ImageBackground } from "react-native-web";
-
 
 const Homelist = () => {
   const renderSectionHeader = ({section}) => (
