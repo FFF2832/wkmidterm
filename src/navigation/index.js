@@ -139,9 +139,9 @@ const MyTabs = () => {
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-        tabBarInactiveTintColor: colorMode == 'light' ? colors.light500 : 'gray',
-        tabBarActiveTintColor: colorMode == 'light' ? colors.primary700 : 'white',
-        tabBarStyle: { backgroundColor: colorMode == 'light' ? 'white' : 'black' },
+        tabBarInactiveTintColor: colorMode == 'light' ?'#4F5B57' : 'gray',
+        tabBarActiveTintColor: colorMode == 'light' ?'#D47146' : 'white',
+        tabBarStyle: { backgroundColor: colorMode == 'light' ? '#E2D5C3' : '#4F5B57' },
         // headerShown: false
       }}
       >
