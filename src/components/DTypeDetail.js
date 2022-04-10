@@ -16,7 +16,11 @@ const DTypeDetail = ({ dtype, navigation }) => {
 
         <AspectRatio w="171" ratio={1} >
           <Box >
-              <Image
+          <Pressable 
+          onPress={() => navigation.navigate('Detail', dtype)}
+          >
+          
+             <Image
             margin="1"
             width="167"
             height="191"
@@ -31,23 +35,18 @@ const DTypeDetail = ({ dtype, navigation }) => {
              bg="#B9D2C8" opacity="0.8" borderRadius="7">
               <Text  color="#495551"  fontWeight="bold" opacity="2"   >{dtype.title}</Text> 
             </Center>
-            {/* <Image
-            margin="1"
-            width="171"
-            height="40"
-            padding="1"
-            position= "absolute"
-            zIndex= "999"
-            elevation="3"
-            alignItems="flex-end"
-            source={{ uri: "https://github.com/FFF2832/wkmidterm/blob/master/src/images/Rectangle%2035.png?raw=true"}}
-            alt="artist"
-            /> */}
+          </Pressable>   
+             
+            
          
          </Box>
         </AspectRatio>
         <AspectRatio w="171" ratio={1} >
+
           <Box>
+          <Pressable 
+          onPress={() => navigation.navigate('Detail', dtype)}
+          >
               <Image
             margin="1"
             width="167"
@@ -62,6 +61,8 @@ const DTypeDetail = ({ dtype, navigation }) => {
              bg="#B9D2C8" opacity="0.7"borderRadius="7" >
               <Text  color="#495551"  fontWeight="bold" opacity="2" >{dtype.title2}</Text> 
             </Center>
+           </Pressable>  
+              
            
          </Box>
         </AspectRatio>
@@ -80,7 +81,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
         <Pressable 
           onPress={() => navigation.navigate('Detail', dtype)}
         >
-           
+        </Pressable>   
             <AspectRatio  width="200" ratio={1}>
           <Image
             // margin="1"
@@ -97,7 +98,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
 
           </AspectRatio>
           
-        </Pressable>
+        
       </Box>    */}
     </Box>
   )};

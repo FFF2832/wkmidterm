@@ -174,7 +174,7 @@ const MyTabs = () => {
             fontSize: 20
           },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="collapse-all-outline" color={color} size={26} />
+            <MaterialCommunityIcons name="heart-outline" color={color} size={26} />
           ),
         }}
       />
@@ -276,7 +276,7 @@ const HomeStack = ({ navigation }) => {
     >
       <Stack.Screen
         name="Home"
-        component={AlbumScreen}
+        component={DTypeScreen}
         options={{
           title: albumData.albumTitle,
           headerStyle: {
