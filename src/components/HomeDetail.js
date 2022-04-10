@@ -1,8 +1,8 @@
 import React from "react";
-// import { StyleSheet, Text, View, Image} from "react-native";
+// import { StyleSheet, Text, View} from "react-native";
 import { Box, Image, Pressable,Text,Center} from "native-base"
-import LinearGradient from 'react-native-linear-gradient';
-import { ImageBackground} from "react-native"
+// import LinearGradient from 'react-native-linear-gradient';
+// import { ImageBackground} from "react-native"
 
 
 

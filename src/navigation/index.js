@@ -141,7 +141,7 @@ const MyTabs = () => {
       screenOptions={{
         tabBarInactiveTintColor: colorMode == 'light' ?'#4F5B57' : 'gray',
         tabBarActiveTintColor: colorMode == 'light' ?'#D47146' : 'white',
-        tabBarStyle: { backgroundColor: colorMode == 'light' ? '#E2D5C3' : '#4F5B57' },
+        tabBarStyle: { backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57' },
         // headerShown: false
       }}
       >

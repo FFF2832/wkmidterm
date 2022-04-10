@@ -4,28 +4,32 @@ import { Flex, Spacer } from "native-base";
 const DTypeDetail = ({ dtype, navigation }) => {
   return (
     <Box 
-      marginX={1} marginBottom={2} borderRadius={0}   flex="1" p={1} marginTop={2} marginLeft={4}
-      _dark={{ borderColor: 'blueGray.500', borderWidth: 0.6 }}
+      marginX={1} marginBottom={5} borderRadius={0}   flex="1" p={1} marginTop={2} marginLeft={4} 
+      _dark={{ borderColor: 'blueGray.500', borderWidth: 0 }}
     >
-      <HStack 
+     
+     
+     <HStack 
         _dark={{ bg: "blueGray.900"}}
-        _light={{ bg: "white" }}>
-        
+        _light={{ bg: "#E2D5C3" }}>
+         
+
         <AspectRatio w="171" ratio={1} >
-          <Box>
+          <Box >
               <Image
             margin="1"
-            width="171"
-            height="136"
+            width="167"
+            height="191"
             padding="1"
             borderRadius="7"
+            paddingRight={4}
             source={{ uri: dtype.image }}
             alt="artist"
             />
             
-            <Center width="171" height="10"   position= "absolute" zIndex= "999" elevation="3" flex="1"  margin="1"  marginTop={24}
-             bg="#B9D2C8" opacity="0.7" borderRadius="7">
-              <Text  color="white"  fontWeight="bold" opacity="2" >{dtype.title}</Text> 
+            <Center width="167" height="10"   position= "absolute" zIndex= "999" elevation="2" flex="1"  margin="1"  marginTop={20} 
+             bg="#B9D2C8" opacity="0.8" borderRadius="7">
+              <Text  color="#495551"  fontWeight="bold" opacity="2"   >{dtype.title}</Text> 
             </Center>
             {/* <Image
             margin="1"
@@ -46,17 +50,17 @@ const DTypeDetail = ({ dtype, navigation }) => {
           <Box>
               <Image
             margin="1"
-            width="171"
-            height="136"
+            width="167"
+            height="191"
             padding="1"
             borderRadius="7"
             source={{ uri: dtype.image_2 }}
             alt="artist"
             />
             
-            <Center width="171" height="10"   position= "absolute" zIndex= "999" elevation="3" flex="1"  margin="1"  marginTop={24}
+            <Center width="167" height="10"   position= "absolute" zIndex= "999" elevation="3" flex="1"  margin="1"   marginTop={20} 
              bg="#B9D2C8" opacity="0.7"borderRadius="7" >
-              <Text  color="white"  fontWeight="bold" opacity="2" >{dtype.title2}</Text> 
+              <Text  color="#495551"  fontWeight="bold" opacity="2" >{dtype.title2}</Text> 
             </Center>
            
          </Box>
@@ -68,6 +72,8 @@ const DTypeDetail = ({ dtype, navigation }) => {
           <Text>{dtype.artist}</Text>
         </VStack> */}
       </HStack>
+     
+     
       
       {/* <Box p={1} flex="1"  _dark={{ bg: "blueGray.900" }}
         _light={{ bg: "white" }}>

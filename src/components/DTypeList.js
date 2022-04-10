@@ -1,17 +1,23 @@
 import React from "react";
-import { FlatList } from "native-base";
+import { Box, FlatList ,Image} from "native-base";
 import DTypeDetail from "./DTypeDetail";
 
 const DTypeList = ({ list, navigation }) => {
   const renderItem = ({ item }) => <DTypeDetail dtype={item} navigation={navigation} />;
   return (
-    <FlatList
+    <Box bg="#E2D5C3"    >
+       
+        <FlatList
     _dark={{ bg: "blueGray.900" }}
-    _light={{ bg: "white" }}
+    _light={{ bg: "#E2D5C3"  }}
+
       data={list}
       renderItem={renderItem}
       keyExtractor={item => item.title}
-    />    
+      
+    />  
+    </Box>
+      
   );  
 }
 
