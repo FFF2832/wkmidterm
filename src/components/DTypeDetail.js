@@ -5,17 +5,17 @@ const DTypeDetail = ({ dtype, navigation }) => {
   return (
     <Box 
       marginX={1} marginBottom={5} borderRadius={0}   flex="1" p={1} marginTop={2} marginLeft={4} 
-      _dark={{ borderColor: 'blueGray.500', borderWidth: 0 }}
+      _dark={{ borderColor: '#4F5B57', borderWidth: 0 }}
     >
      
      
      <HStack 
-        _dark={{ bg: "blueGray.900"}}
+        _dark={{ bg: "#4F5B57"}}
         _light={{ bg: "#E2D5C3" }}>
          
 
         <AspectRatio w="171" ratio={1} >
-          <Box >
+          <Box  >
           <Pressable 
           onPress={() => navigation.navigate('Detail', dtype)}
           >
@@ -24,9 +24,10 @@ const DTypeDetail = ({ dtype, navigation }) => {
             margin="1"
             width="167"
             height="191"
-            padding="1"
+            padding="2"
             borderRadius="7"
             paddingRight={4}
+            
             source={{ uri: dtype.image }}
             alt="artist"
             />
@@ -53,6 +54,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
             height="191"
             padding="1"
             borderRadius="7"
+            
             source={{ uri: dtype.image_2 }}
             alt="artist"
             />

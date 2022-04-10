@@ -8,7 +8,7 @@ const DTypeList = ({ list, navigation }) => {
     <Box bg="#E2D5C3"    >
        
         <FlatList
-    _dark={{ bg: "blueGray.900" }}
+    _dark={{ bg: "#4F5B57"  }}
     _light={{ bg: "#E2D5C3"  }}
 
       data={list}
