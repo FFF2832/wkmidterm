@@ -15,6 +15,7 @@ import { extendTheme, useColorMode } from 'native-base';
 
 import AlbumScreen from '../screens/AlbumScreen';
 import DetailScreen from '../screens/DetailScreen';
+import HomeScreen from '../components/LogIn';
 import SettingsScreen from '../screens/SettingsScreen';
 import DTypeScreen from '../screens/DTypeScreen';
 import DisplaySettingScreen from '../screens/DisplaySettingScreen';
@@ -24,7 +25,7 @@ import MyTheme from '../Theme';
 import ActionButton from '../components/ActionButton';
 
 import albumData from "../json/albums.json";
-import Intro from "../screens/Home/Intro"
+// import Intro from "../screens/Home/Intro"
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -48,7 +49,7 @@ const Navigation = () => {
         barStyle={colorMode == "light" ? "dark-content" : "light-content"}
         backgroundColor={colorMode == "light" ? "white" : "black"}
       />
-       <Intro/>
+       {/* <Intro/> */}
       {Platform.OS == 'ios' ?
         <MyTabs /> :
         <MyTabs />
@@ -280,7 +281,32 @@ const HomeStack = ({ navigation }) => {
     //   headerShown: false
     // }}
     >
-      
+      {/* <Stack.Screen
+        name="Intro"
+        component={HomeScreen}
+        options={{
+          title: albumData.albumTitle,
+          headerStyle: {
+            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+          },
+          headerTitleStyle: {
+            color: colorMode == 'light' ? 'black' : 'white',
+            fontWeight: '400',
+            fontSize: 20
+          },
+          headerLeft: () => (
+            Platform.OS == 'ios' ?
+              <></> :
+              <MaterialCommunityIcons
+                name={'menu'}
+                color={colorMode == 'light' ? 'black' : 'white'}
+                size={20}
+                onPress={() => navigation.openDrawer()}
+                style={{ marginRight: 20 }}
+              />
+          ),
+        }}
+      /> */}
       <Stack.Screen
         name="Home"
         component={DTypeScreen}
@@ -404,4 +430,59 @@ const DTypeStack = ({ navigation }) => {
     </Stack.Navigator>
   );
 }
+// const IntroStack = ({ navigation }) => {
+//   const { colorMode } = useColorMode();
+
+//   return (
+//     <Stack.Navigator
+//     >
+//       <Stack.Screen
+//         name="DType"
+//         component={DTypeScreen}
+//         options={{
+//           title: albumData.albumTitle,
+//           headerStyle: {
+//             backgroundColor: colorMode == 'light' ? 'white' : 'black',
+//           },
+//           headerTitleStyle: {
+//             color: colorMode == 'light' ? 'black' : 'white',
+//             fontWeight: '400',
+//             fontSize: 20
+//           },
+//           headerLeft: () => (
+//             Platform.OS == 'ios' ?
+//               <></> :
+//               <MaterialCommunityIcons
+//                 name={'menu'}
+//                 color={colorMode == 'light' ? 'black' : 'white'}
+//                 size={20}
+//                 onPress={() => navigation.openDrawer()}
+//                 style={{ marginRight: 20 }}
+//               />
+//           ),
+//         }}
+//       />
+//       <Stack.Screen
+//         name="Detail"
+//         component={DetailScreen}
+//         options={({ route }) => ({
+//           title: route.params.title,
+//           headerStyle: {
+//             backgroundColor: '#fff',
+//           },
+//           headerTintColor: colorMode == 'light' ? 'black' : 'white',
+//           headerStyle: {
+//             backgroundColor: colorMode == 'light' ? 'white' : 'black',
+//           },
+//           headerTitleStyle: {
+//             color: colorMode == 'light' ? 'black' : 'white',
+//             fontWeight: '400',
+//             fontSize: 20
+//           },
+//         })}
+//       />
+     
+//     </Stack.Navigator>
+//   );
+// }
 export default Navigation;

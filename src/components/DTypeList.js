@@ -15,7 +15,7 @@ const DTypeList = ({ list, navigation }) => {
       data={list}
       renderItem={renderItem}
       keyExtractor={item => item.title}
-      
+      paddingBottom={10}
     />  
     </Box>
       

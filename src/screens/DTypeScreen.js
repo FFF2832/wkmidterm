@@ -16,8 +16,8 @@ const DTypeScreen = ({ navigation }) => {
             source={{ uri: "https://github.com/FFF2832/wkmidterm/blob/master/src/images/debby-hudson-zAJcnffG8xw-unsplash.png?raw=true" }}
             alt="1"
             />
-             <Center 
-            width="178" height="5" bg="#E2D5C3" position= "absolute" zIndex= "999" elevation="2"  marginTop={10}
+            <Center 
+            width="200" height="10" bg="#E2D5C3" position= "absolute" zIndex= "999" elevation="2"  marginTop={88} marginLeft={90}
             >
             
             </Center>
@@ -26,8 +26,8 @@ const DTypeScreen = ({ navigation }) => {
              height="54"
              flex="1"
              position= "absolute" zIndex= "999" elevation="2"
-             marginTop={6}
-            
+             marginTop={70}
+             marginLeft={100}
              marginBack={2}
             source={{uri:"https://github.com/FFF2832/wkmidterm/blob/master/src/images/Persnote.png?raw=true"}}
             alt="1"

@@ -14,7 +14,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
         _light={{ bg: "#E2D5C3" }}>
          
 
-        <AspectRatio w="171" ratio={1} >
+        <AspectRatio w="180" ratio={5} >
           <Box  >
           <Pressable 
           onPress={() => navigation.navigate('Detail', dtype)}
@@ -32,7 +32,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
             alt="artist"
             />
             
-            <Center width="167" height="10"   position= "absolute" zIndex= "999" elevation="2" flex="1"  margin="1"  marginTop={20} 
+            <Center width="167" height="10"   position= "absolute" zIndex= "999" elevation="2" flex="1"  margin="1"  marginTop={155} 
              bg="#B9D2C8" opacity="0.8" borderRadius="7">
               <Text  color="#495551"  fontWeight="bold" opacity="2"   >{dtype.title}</Text> 
             </Center>
@@ -59,7 +59,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
             alt="artist"
             />
             
-            <Center width="167" height="10"   position= "absolute" zIndex= "999" elevation="3" flex="1"  margin="1"   marginTop={20} 
+            <Center width="167" height="10"   position= "absolute" zIndex= "999" elevation="3" flex="1"  margin="1"   marginTop={155} 
              bg="#B9D2C8" opacity="0.7"borderRadius="7" >
               <Text  color="#495551"  fontWeight="bold" opacity="2" >{dtype.title2}</Text> 
             </Center>

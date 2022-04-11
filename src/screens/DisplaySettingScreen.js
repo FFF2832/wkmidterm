@@ -7,13 +7,13 @@ const DisplaySettingScreen = () => {
    return (
       <Box
          flex={1}
-         _dark={{ bg: "blueGray.900" }}
-         _light={{ bg: "blueGray.50" }}
+         _dark={{ bg: "#4F5B57" }}
+         _light={{ bg: "#E2D5C3" }}
       >
          <Center
             shadow={2} width="90%"
             mt="2" px="2" py="4"
-            _dark={{ bg: "blueGray.800", borderColor: 'blueGray.500', borderWidth: 0.6 }}
+            _dark={{ bg: "#000", borderColor: 'blueGray.500', borderWidth: 0.6 }}
             _light={{ bg: "white" }}
             borderRadius="md"
             alignSelf="center"
