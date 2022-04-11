@@ -42,9 +42,11 @@ const App = () => {
   }
   const  renderItem =({item})=> {
     return (
-      <View >
+      <View style={{flex:1,alignContent:"center",justifyContent:"center" ,backgroundColor:'#E2D5C3'
+      }}>
         <Text >{item.title}</Text>
-        <Image source={item.image} />
+        {/* <Image source={item.image}  width="390" height="764" /> */}
+        <Image source={ item.image }  width="390" height="764" />
         <Text >{item.text}</Text>
       </View>
     );
@@ -54,7 +56,7 @@ const App = () => {
     {
       showRealApp?(
         <SafeAreaProvider>
-            <View>
+            <View flex={1}>
               {/* <Text>this is app</Text>
               <Text>this is app</Text> */}
                <NativeBaseProvider>
@@ -62,10 +64,10 @@ const App = () => {
              {/* <Intro/> */}
                <Navigation />
            </NativeBaseProvider>
-              <Button
+              {/* <Button
               title="app"
               onPress={()=>showRealApp(false)}
-              />
+              /> */}
                 
             </View>
 
@@ -101,7 +103,7 @@ const slides = [
     title: 'Mobile Recharge',
     image: {
       uri:
-        'https://raw.githubusercontent.com/tranhonghan/images/main/intro_mobile_recharge.png',
+        'https://github.com/FFF2832/wkmidterm/blob/master/src/images/debby-hudson-zAJcnffG8xw-unsplash.png?raw=true',
     },
     backgroundColor: '#20d2bb',
   },

@@ -11,7 +11,7 @@ const ListItem = ({ title, navigation, destination }) => {
     >
       <HStack
         _dark={{
-          bg: "blueGray.900",
+          bg: "#4F5B57",
           borderColor: "blueGray.500",
           borderButtomWidth: 0.6,
         }}

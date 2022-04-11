@@ -146,7 +146,7 @@ const MyTabs = () => {
       initialRouteName="HomeStack"
       screenOptions={{
         tabBarInactiveTintColor: colorMode == 'light' ?'#4F5B57' : 'gray',
-        tabBarActiveTintColor: colorMode == 'light' ?'#D47146' : 'white',
+        tabBarActiveTintColor: colorMode == 'light' ?'#D47146' : 'E2D5C3',
         tabBarStyle: { backgroundColor: colorMode == 'light' ? 'white' : '#000000' },
         // headerShown: false
       }}
@@ -158,7 +158,7 @@ const MyTabs = () => {
           headerShown: false,
           title: "",
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="home" color={color} size={31} />
           ),
         }}
       />
@@ -180,7 +180,7 @@ const MyTabs = () => {
             fontSize: 20
           },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="heart-outline" color={color} size={26} />
+            <MaterialCommunityIcons name="heart-outline" color={color} size={31} />
           ),
         }}
       />
@@ -195,7 +195,7 @@ const MyTabs = () => {
             fontSize: 20
           },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={26} />
+            <MaterialCommunityIcons name="cog" color={color} size={31} />
           ),
         }}
       />
@@ -209,7 +209,7 @@ const SettingsStack = ({ navigation }) => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Settings"
+        name="帳號設定"
         component={SettingsScreen}
         options={{
           title: "Settings",
