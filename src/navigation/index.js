@@ -24,7 +24,7 @@ import MyTheme from '../Theme';
 import ActionButton from '../components/ActionButton';
 
 import albumData from "../json/albums.json";
-
+import Intro from "../screens/Home/Intro"
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -41,15 +41,19 @@ const Drawer = createDrawerNavigator();
 const Navigation = () => {
   const { colorMode } = useColorMode();
   return (
+    
     <NavigationContainer theme={MyTheme} >
+      
       <StatusBar
         barStyle={colorMode == "light" ? "dark-content" : "light-content"}
         backgroundColor={colorMode == "light" ? "white" : "black"}
       />
+       <Intro/>
       {Platform.OS == 'ios' ?
         <MyTabs /> :
         <MyTabs />
       }
+     
     </NavigationContainer>
   );
 }
@@ -136,6 +140,7 @@ const MyTabs = () => {
   const { colorMode } = useColorMode();
 
   return (
+    
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
@@ -269,11 +274,13 @@ const HomeStack = ({ navigation }) => {
   const { colorMode } = useColorMode();
 
   return (
+    
     <Stack.Navigator
     // screenOptions={{
     //   headerShown: false
     // }}
     >
+      
       <Stack.Screen
         name="Home"
         component={DTypeScreen}

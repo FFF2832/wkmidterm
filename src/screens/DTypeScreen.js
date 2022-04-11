@@ -7,7 +7,7 @@ import {  ScrollView} from 'react-native';
 const DTypeScreen = ({ navigation }) => {
   return (
     <Box>
-      <ScrollView>
+    <ScrollView>
     <Box>
           <Image
             
@@ -38,7 +38,7 @@ const DTypeScreen = ({ navigation }) => {
       < DTypeList 
         list={typeData.typeList}
         navigation={navigation}
-       
+      
       />
       </ScrollView>
      

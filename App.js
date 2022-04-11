@@ -8,7 +8,9 @@ import Navigation from './src/navigation';
 const App = () => {
   return (
     <SafeAreaProvider>
+      
       <NativeBaseProvider>
+      
         <Navigation />
       </NativeBaseProvider>
     </SafeAreaProvider>
