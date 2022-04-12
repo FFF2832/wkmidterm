@@ -63,8 +63,7 @@ const App = () => {
       showRealApp?(
         <SafeAreaProvider>
             <View flex={1}>
-              {/* <Text>this is app</Text>
-              <Text>this is app</Text> */}
+              
                <NativeBaseProvider>
           
              {/* <Intro/> */}
@@ -87,14 +86,7 @@ const App = () => {
         showSkipButton={true}
         bottomButton
         />
-        // <SafeAreaProvider>
-      
-        // <NativeBaseProvider>
-          
-        //   {/* <Intro/> */}
-        //   <Navigation />
-        // </NativeBaseProvider>
-        // </SafeAreaProvider>
+        
       )
     }
     </>
@@ -105,7 +97,7 @@ export default App;
 const slides = [
   {
     key: 's1',
-    text: '1232',
+    text: '準備開始記錄生活了嗎?在這裡可以收集你的各種興趣!',
     title: '1232',
     image: {
       uri:
@@ -175,17 +167,21 @@ const styles= StyleSheet.create({
       height:840,
      marginLeft:0,
      position: "absolute" ,
-     zIndex: 1
+     zIndex: 1,
+     
   },
   introTextStyle:{
       fontSize:20,
       elevation: 3,
       color:'black',
-      fontWeight:'bold'
+      fontWeight:'bold',
+      zIndex: 2,
+
   },
   introLogoStyle:{
     width:191,
     height:60,
+    zIndex: 2,
   }
 
 })
