@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, HStack, Pressable } from "native-base";
+import { Text, HStack, Pressable, Center, Box} from "native-base";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 const ListItem = ({ title, navigation, destination }) => {
@@ -12,19 +12,23 @@ const ListItem = ({ title, navigation, destination }) => {
       <HStack
         _dark={{
           bg: "#4F5B57",
-          borderColor: "blueGray.500",
+          borderColor: "#4F5B57",
           borderButtomWidth: 0.6,
         }}
         _light={{ bg: "#E2D5C3" }}
         px="4"
         py="4"
         borderTopWidth={0}
-        borderColor="lightgray"
+        borderColor="#E2D5C3"
         justifyContent="space-between"
+        marginTop={10}
+        
       >
-         <MaterialCommunityIcons name="cog-outline" color="#4F5B57" bg="#4F5B57" size={26} />
+        <Center width="30" height="30"   position= "absolute" zIndex= "999" elevation="2" flex="1" borderRadius="9" marginTop={3} marginLeft={49} _dark={{bg: "#4F5B57"}} _light={{bg:"#4F5B57"}}> 
+         <MaterialCommunityIcons name="cog-outline" color="#fff"  size={26} />
+         </Center>
         <Text fontSize={15}>{title}</Text>
-        <AntDesign name="right" color="gray" size={16} />
+        <AntDesign name="right" color="gray" size={20} />
       </HStack>
     </Pressable>
   );

@@ -150,16 +150,7 @@ const slides = [
     },
     backgroundColor: '#f6437b',
   },
-  {
-    key: 's6',
-    title: 'Train Booking',
-    text: ' 10% off on first Train booking',
-    image: {
-      uri:
-        'https://raw.githubusercontent.com/tranhonghan/images/main/intro_train_ticket_booking.png',
-    },
-    backgroundColor: '#febe29',
-  },
+  
 ];
 const styles= StyleSheet.create({
   introImageStyle:{

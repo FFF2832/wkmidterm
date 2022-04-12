@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform } from 'react-native';
+import { Platform ,Alert} from 'react-native';
 import { NavigationContainer, useTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -146,7 +146,7 @@ const MyTabs = () => {
       initialRouteName="HomeStack"
       screenOptions={{
         tabBarInactiveTintColor: colorMode == 'light' ?'#4F5B57' : 'gray',
-        tabBarActiveTintColor: colorMode == 'light' ?'#D47146' : 'E2D5C3',
+        tabBarActiveTintColor: colorMode == 'light' ?'#D47146' : '#D47146',
         tabBarStyle: { backgroundColor: colorMode == 'light' ? 'white' : '#000000' },
         // headerShown: false
       }}
@@ -209,12 +209,12 @@ const SettingsStack = ({ navigation }) => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="帳號設定"
+        name="Setting"
         component={SettingsScreen}
         options={{
-          title: "Settings",
+          title: "帳號設定",
           headerStyle: {
-            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTitleStyle: {
             color: colorMode == 'light' ? 'black' : 'white',
@@ -238,9 +238,9 @@ const SettingsStack = ({ navigation }) => {
         name="DisplaySetting"
         component={DisplaySettingScreen}
         options={{
-          title: "Display",
+          title: "主題設定",
           headerStyle: {
-            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTintColor: colorMode == 'light' ? 'black' : 'white',
           headerTitleStyle: {
@@ -311,9 +311,9 @@ const HomeStack = ({ navigation }) => {
         name="Home"
         component={DTypeScreen}
         options={{
-          title: albumData.albumTitle,
+          title: "首頁",
           headerStyle: {
-            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTitleStyle: {
             color: colorMode == 'light' ? 'black' : 'white',
@@ -331,6 +331,14 @@ const HomeStack = ({ navigation }) => {
                 style={{ marginRight: 20 }}
               />
           ),
+          headerRight:() =>(
+            <MaterialCommunityIcons
+            name={'plus'}
+            color={colorMode == 'light' ? '#4F5B57' : 'white'}
+            size={30}
+            onPress={() => Alert.alert("新增項目")}
+            />
+          )
         }}
       />
       <Stack.Screen
@@ -339,11 +347,11 @@ const HomeStack = ({ navigation }) => {
         options={({ route }) => ({
           title: route.params.title,
           headerStyle: {
-            backgroundColor: '#fff',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTintColor: colorMode == 'light' ? 'black' : 'white',
           headerStyle: {
-            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTitleStyle: {
             color: colorMode == 'light' ? 'black' : 'white',
@@ -354,11 +362,11 @@ const HomeStack = ({ navigation }) => {
       />
       <Stack.Screen
         name="DType"
-        component={DTypeScreen}
+        component={AlbumScreen}
         options={({ route }) => ({
-          title: route.params.title,
+          title: "我的收藏",
           headerStyle: {
-            backgroundColor: '#fff',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTintColor: colorMode == 'light' ? 'black' : 'white',
           headerStyle: {
@@ -383,11 +391,11 @@ const DTypeStack = ({ navigation }) => {
     >
       <Stack.Screen
         name="DType"
-        component={DTypeScreen}
+        component={AlbumScreen}
         options={{
-          title: albumData.albumTitle,
+          title: "我的收藏",
           headerStyle: {
-            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTitleStyle: {
             color: colorMode == 'light' ? 'black' : 'white',
@@ -413,11 +421,11 @@ const DTypeStack = ({ navigation }) => {
         options={({ route }) => ({
           title: route.params.title,
           headerStyle: {
-            backgroundColor: '#fff',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTintColor: colorMode == 'light' ? 'black' : 'white',
           headerStyle: {
-            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },
           headerTitleStyle: {
             color: colorMode == 'light' ? 'black' : 'white',
@@ -430,59 +438,5 @@ const DTypeStack = ({ navigation }) => {
     </Stack.Navigator>
   );
 }
-// const IntroStack = ({ navigation }) => {
-//   const { colorMode } = useColorMode();
 
-//   return (
-//     <Stack.Navigator
-//     >
-//       <Stack.Screen
-//         name="DType"
-//         component={DTypeScreen}
-//         options={{
-//           title: albumData.albumTitle,
-//           headerStyle: {
-//             backgroundColor: colorMode == 'light' ? 'white' : 'black',
-//           },
-//           headerTitleStyle: {
-//             color: colorMode == 'light' ? 'black' : 'white',
-//             fontWeight: '400',
-//             fontSize: 20
-//           },
-//           headerLeft: () => (
-//             Platform.OS == 'ios' ?
-//               <></> :
-//               <MaterialCommunityIcons
-//                 name={'menu'}
-//                 color={colorMode == 'light' ? 'black' : 'white'}
-//                 size={20}
-//                 onPress={() => navigation.openDrawer()}
-//                 style={{ marginRight: 20 }}
-//               />
-//           ),
-//         }}
-//       />
-//       <Stack.Screen
-//         name="Detail"
-//         component={DetailScreen}
-//         options={({ route }) => ({
-//           title: route.params.title,
-//           headerStyle: {
-//             backgroundColor: '#fff',
-//           },
-//           headerTintColor: colorMode == 'light' ? 'black' : 'white',
-//           headerStyle: {
-//             backgroundColor: colorMode == 'light' ? 'white' : 'black',
-//           },
-//           headerTitleStyle: {
-//             color: colorMode == 'light' ? 'black' : 'white',
-//             fontWeight: '400',
-//             fontSize: 20
-//           },
-//         })}
-//       />
-     
-//     </Stack.Navigator>
-//   );
-// }
 export default Navigation;

@@ -7,9 +7,10 @@ import sections from "../json/type_section.json";
 const Homelist = () => {
   const renderSectionHeader = ({section}) => (
     <>
-      <Text fontSize={20} marginTop={35} marginBottom={35} marginLeft={34} color="#4F5B57" fontWeight="bold">
+      <Text fontSize={20} marginTop={60} marginBottom={0} marginLeft={180} color="#4F5B57" fontWeight="bold"  _dark={{ color:"#fff"}}>
         {section.title} 
       </Text>
+      <Box width={277} height={0.5} bgColor="#4F5B57" marginBottom={10} marginLeft={60}></Box>  
       {section.horizontal ? (
         <FlatList
           horizontal={true}

@@ -32,7 +32,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
             alt="artist"
             />
             
-            <Center width="167" height="10"   position= "absolute" zIndex= "999" elevation="2" flex="1"  margin="1"  marginTop={155} 
+            <Center width="167" height="10"   position= "absolute"  elevation="2" flex="1"  margin="1"  marginTop={155} 
              bg="#B9D2C8" opacity="0.8" borderRadius="7">
               <Text  color="#495551"  fontWeight="bold" opacity="2"   >{dtype.title}</Text> 
             </Center>

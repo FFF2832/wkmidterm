@@ -37,8 +37,8 @@ const SettingsScreen = ({ navigation }) => {
             </Center>
 
             <Box 
-                mt="12" borderBottomWidth={1} borderColor="lightgray"
-                _dark={{ bg:"#4F5B57", borderColor: 'blueGray.500', borderButtomWidth: 0.6 }}
+                mt="12" borderBottomWidth={1} borderColor="#E2D5C3"
+                _dark={{ bg:"#4F5B57", borderColor: '#4F5B57', borderButtomWidth: 0.6 }}
             >
 
                 <ListItem title="主題設定"   navigation={navigation} destination="DisplaySetting" />

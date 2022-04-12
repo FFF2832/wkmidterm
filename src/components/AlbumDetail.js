@@ -1,13 +1,40 @@
 import React from "react";
-import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable } from "native-base"
+import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable,Center } from "native-base"
 
 const AlbumDetail = ({ album, navigation }) => {
   return (
     <Box 
-      marginX={1} marginBottom={2} borderRadius={3} shadow={2}
-      _dark={{ borderColor: 'blueGray.500', borderWidth: 0.6 }}
+      marginX={0} marginBottom={2} marginTop={5}  shadow={2} flex={1}
+      _dark={{  borderWidth: 0.6 }}
     >
-      <HStack 
+      <Center>
+      <VStack>
+          <HStack>
+            <Center  width="304" height="46"  bg="#fff"  >
+            
+            <Image
+              source={{ uri: album.image }}
+              alt="album"
+              width="10"
+              height="10"
+              flex={1}
+              
+              marginRight={240} 
+            /> 
+             
+            
+           
+            
+            
+          
+            </Center>
+          </HStack>
+          {/* <HStack></HStack>
+          <HStack></HStack> */}
+      </VStack>
+      </Center>
+      
+      {/* <HStack 
         _dark={{ bg: "blueGray.900"}}
         _light={{ bg: "white" }}>
         <AspectRatio w="50" ratio={1}>
@@ -34,7 +61,7 @@ const AlbumDetail = ({ album, navigation }) => {
             />            
           </AspectRatio>
         </Pressable>
-      </Box>   
+      </Box>    */}
     </Box>
   )};
 
