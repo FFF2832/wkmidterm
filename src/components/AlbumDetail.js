@@ -11,7 +11,7 @@ const AlbumDetail = ({ album, navigation }) => {
       <VStack>
           <HStack>
             <Center  width="304" height="46"  bg="#fff"  >
-            
+            <Text position= "absolute"  elevation="2"   marginRight={50} >{album.title}</Text>
             <Image
               source={{ uri: album.image }}
               alt="album"
@@ -19,9 +19,9 @@ const AlbumDetail = ({ album, navigation }) => {
               height="10"
               flex={1}
               
-              marginRight={240} 
+              marginRight={264} 
             /> 
-             
+            
             
            
             
