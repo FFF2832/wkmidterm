@@ -11,7 +11,7 @@ const AlbumList = ({ list, navigation }) => {
       data={list}
       renderItem={renderItem}
       keyExtractor={item => item.title}
-      
+      contentContainerStyle={{paddingBottom:440}}
     />  
      
   );  

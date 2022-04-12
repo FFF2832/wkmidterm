@@ -10,6 +10,18 @@ const SettingsScreen = ({ navigation }) => {
             _light={{ bg: "#E2D5C3" }}        
         >
             <Center>
+            <Image
+                 margin="1"
+                 width="876"
+                 height="254"
+                 padding="2"
+                 borderRadius="7"
+                 paddingRight={4}
+                 position= "absolute"  //style={{elevation:2}}
+                marginTop={0}
+              source={{ uri: "https://images.pexels.com/photos/4719642/pexels-photo-4719642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" }}
+              alt="artist"
+            />
                 <Image
                  margin="1"
                  width="140"
@@ -23,19 +35,37 @@ const SettingsScreen = ({ navigation }) => {
               source={{ uri: "https://github.com/FFF2832/wkmidterm/blob/master/src/images/Group%2054.png?raw=true" }}
               alt="artist"
             />
-            <Text color="#4F5B57" fontSize={20} fontWeight="bold" _dark={{color:"#fff"}}>Jennifer Lin</Text>
-            <HStack>
+            <Text color="#fff" fontSize={20} fontWeight="bold" _dark={{color:"#fff"}}>Jennifer Lin</Text>
+            <Text color="#fff" fontSize={12} fontWeight="bold" _dark={{color:"#fff"}}>簡介:落在一個人一生中的雪，我們不能全部看見。</Text>
+            </Center>
+            <Center>
+            {/* <HStack  marginTop={60}>
                 <Text color="#4F5B57" fontSize={12} fontWeight="bold" marginRight={3} _dark={{color:"#fff"}}>已收藏次數</Text>
                 <Text color="#4F5B57" fontSize={12} fontWeight="bold"  marginRight={3} _dark={{color:"#fff"}}>已寫文章數</Text>
                 <Text color="#4F5B57" fontSize={12} fontWeight="bold"  marginRight={2} _dark={{color:"#fff"}}>已加入時間</Text>
             </HStack>
-            <HStack>
-                <Text color="#4F5B57" fontSize={12} fontWeight="bold" marginRight={20} _dark={{color:"#fff"}}>5</Text>
-                <Text color="#4F5B57" fontSize={12} fontWeight="bold"  marginRight={20} _dark={{color:"#fff"}}>5</Text>
-                <Text color="#4F5B57" fontSize={12} fontWeight="bold"  marginRight={13} _dark={{color:"#fff"}}>5</Text>
-            </HStack>
-            </Center>
+            <HStack> 
+                <Text color="#4F5B57" fontSize={12} fontWeight="bold"  _dark={{color:"#fff"}}>5</Text>
+                <Text color="#4F5B57" fontSize={12} fontWeight="bold"   _dark={{color:"#fff"}}>5</Text>
+                <Text color="#4F5B57" fontSize={12} fontWeight="bold"   _dark={{color:"#fff"}}>5</Text>
+            </HStack> */}
 
+            <HStack  marginTop={50}>
+            <Center flexDirection="column" marginRight={10}>
+            <Text color="#4F5B57" fontSize={12} fontWeight="bold"  _dark={{color:"#fff"}}>已收藏次數</Text>
+            <Text color="#4F5B57" fontSize={15} fontWeight="bold"  _dark={{color:"#fff"}}>5</Text>
+            </Center>
+            <Center flexDirection="column" marginRight={10}>
+            <Text color="#4F5B57" fontSize={12} fontWeight="bold"  _dark={{color:"#fff"}}>已寫文章數</Text>
+            <Text color="#4F5B57" fontSize={15} fontWeight="bold"  _dark={{color:"#fff"}}>5</Text>
+            </Center>
+            <Center flexDirection="column" >
+            <Text color="#4F5B57" fontSize={12} fontWeight="bold"  _dark={{color:"#fff"}}>已加入時間</Text>
+            <Text color="#4F5B57" fontSize={15} fontWeight="bold"  _dark={{color:"#fff"}}>5</Text>
+            </Center>
+            </HStack>
+
+            </Center>
             <Box 
                 mt="12" borderBottomWidth={1} borderColor="#E2D5C3"
                 _dark={{ bg:"#4F5B57", borderColor: '#4F5B57', borderButtomWidth: 0.6 }}

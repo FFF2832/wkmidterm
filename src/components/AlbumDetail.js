@@ -1,17 +1,18 @@
 import React from "react";
+import { StyleSheet } from "react-native";
 import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable,Center } from "native-base"
 
 const AlbumDetail = ({ album, navigation }) => {
   return (
     <Box 
       marginX={0} marginBottom={2} marginTop={5}  shadow={2} flex={1}
-      _dark={{  borderWidth: 0.6 }}
+      // _dark={{  borderWidth: 0.6 }}
     >
       <Center>
       <VStack>
           <HStack>
-            <Center  width="304" height="46"  bg="#fff"  >
-            <Text position= "absolute"  elevation="2"   marginRight={50} >{album.title}</Text>
+            <Center  width="304" height="46"  bg="#fff" borderRadius={7} _dark={{  bg:"#000"}} >
+            <Text position= "absolute"    marginRight={50} >{album.title}</Text>
             <Image
               source={{ uri: album.image }}
               alt="album"
@@ -21,12 +22,6 @@ const AlbumDetail = ({ album, navigation }) => {
               
               marginRight={264} 
             /> 
-            
-            
-           
-            
-            
-          
             </Center>
           </HStack>
           {/* <HStack></HStack>
@@ -34,34 +29,7 @@ const AlbumDetail = ({ album, navigation }) => {
       </VStack>
       </Center>
       
-      {/* <HStack 
-        _dark={{ bg: "blueGray.900"}}
-        _light={{ bg: "white" }}>
-        <AspectRatio w="50" ratio={1}>
-          <Image
-            margin="1"
-            source={{ uri: album.thumbnail_image }}
-            alt="artist"
-          />
-        </AspectRatio>
-        <VStack paddingLeft={2} justifyContent="space-around">
-          <Text>{album.title}</Text>
-          <Text>{album.artist}</Text>
-        </VStack>
-      </HStack>
-      <Box p={1} _dark={{ bg: "blueGray.900" }}
-        _light={{ bg: "white" }}>
-        <Pressable 
-          onPress={() => navigation.navigate('Detail', album)}
-        >
-          <AspectRatio w="100%" ratio={1}>
-            <Image
-              source={{ uri: album.image }}
-              alt="album"
-            />            
-          </AspectRatio>
-        </Pressable>
-      </Box>    */}
+     
     </Box>
   )};
 

@@ -15,7 +15,7 @@ const DTypeList = ({ list, navigation }) => {
             alt="1"
             />
             <Center 
-            width="200" height="10" bg="#E2D5C3" position= "absolute" elevation="2"  marginTop={88} marginLeft={90}
+            width="200" height="10" bg="#E2D5C3" position= "absolute" style={{elevation:2}}   marginTop={88} marginLeft={90}
             >
             
             </Center>
@@ -23,7 +23,7 @@ const DTypeList = ({ list, navigation }) => {
              width="172"
              height="54"
              flex="1"
-             position= "absolute" elevation="3"
+             position= "absolute" //style={{elevation:3}}
              marginTop={70}
              marginLeft={100}
              marginBack={2}

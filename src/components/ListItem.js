@@ -24,7 +24,7 @@ const ListItem = ({ title, navigation, destination }) => {
         marginTop={10}
         
       >
-        <Center width="30" height="30"   position= "absolute" zIndex= "999" elevation="2" flex="1" borderRadius="9" marginTop={3} marginLeft={49} _dark={{bg: "#4F5B57"}} _light={{bg:"#4F5B57"}}> 
+        <Center width="30" height="30"   position= "absolute" zIndex= "999" style={{elevation:2}} flex="1" borderRadius="9" marginTop={3} marginLeft={49} _dark={{bg: "#4F5B57"}} _light={{bg:"#4F5B57"}}> 
          <MaterialCommunityIcons name="cog-outline" color="#fff"  size={26} />
          </Center>
         <Text fontSize={15}>{title}</Text>
