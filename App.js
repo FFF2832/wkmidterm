@@ -24,8 +24,9 @@
 import 'react-native-gesture-handler';
 import React,{useState} from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { View,Text,Image,Button} from 'react-native';
-import { NativeBaseProvider } from 'native-base';
+import { View,Text,Button,Image,StyleSheet} from 'react-native';
+import { NativeBaseProvider,AspectRatio } from 'native-base';
+
 import LogIn from './src/components/LogIn'
 import Navigation from './src/navigation';
 import Intro from './src/screens/Home/index'
@@ -44,9 +45,14 @@ const App = () => {
     return (
       <View style={{flex:1,alignContent:"center",justifyContent:"center" ,backgroundColor:'#E2D5C3'
       }}>
-        <Text >{item.title}</Text>
-        {/* <Image source={item.image}  width="390" height="764" /> */}
-        <Image source={ item.image }  width="390" height="764" />
+        <Image source={ item.logo }  style={styles.introLogoStyle}/>
+        <Text   style={styles.introTextStyle}>{item.title}</Text>
+        
+        <Image source={ item.image }  style={styles.introImageStyle}/>
+       
+       
+        
+        
         <Text >{item.text}</Text>
       </View>
     );
@@ -64,7 +70,7 @@ const App = () => {
              {/* <Intro/> */}
                <Navigation />
            </NativeBaseProvider>
-              {/* <Button
+           {/* <Button
               title="app"
               onPress={()=>showRealApp(false)}
               /> */}
@@ -99,11 +105,16 @@ export default App;
 const slides = [
   {
     key: 's1',
-    text: 'Best Recharge offers',
-    title: 'Mobile Recharge',
+    text: '1232',
+    title: '1232',
     image: {
       uri:
+        
         'https://github.com/FFF2832/wkmidterm/blob/master/src/images/debby-hudson-zAJcnffG8xw-unsplash.png?raw=true',
+    },
+    logo: {
+      uri:
+        'https://github.com/FFF2832/wkmidterm/blob/master/assets/Persnote%20(1).png?raw=true',
     },
     backgroundColor: '#20d2bb',
   },
@@ -158,3 +169,23 @@ const slides = [
     backgroundColor: '#febe29',
   },
 ];
+const styles= StyleSheet.create({
+  introImageStyle:{
+      width:390,
+      height:840,
+     marginLeft:0,
+     position: "absolute" ,
+     zIndex: 1
+  },
+  introTextStyle:{
+      fontSize:20,
+      elevation: 3,
+      color:'black',
+      fontWeight:'bold'
+  },
+  introLogoStyle:{
+    width:191,
+    height:60,
+  }
+
+})

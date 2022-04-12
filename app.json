@@ -6,8 +6,8 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-     
-      "image": "./assets/headerimg.png",
+      "image": "./assets/headercut.png",
+
       "resizeMode": "contain",
       "backgroundColor": "#29303A"
     },
