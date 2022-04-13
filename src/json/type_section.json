@@ -6,80 +6,38 @@
    "data": [
       {
       
-      "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-oladimeji-ajegbile-2386687.jpg",
-      "description": "內容感人，很勵志!可以給4顆心吧"
+      "image": "https://images.twgreatdaily.com/images/image/gl8/gl86TXUBLq-Ct6CZxZsk.jpg",
+      "description": "算是克莉絲汀小說中最喜歡的一本"
 
       
       },
       {
         
-         "image": "https://github.com/FFF2832/wkmidterm/blob/master/src/images/image_hobby.jpg?raw=true",
-         "description": "學到很多上課學不到的東西，實用型的~"
+         "image": "https://github.com/FFF2832/wkmidterm/blob/master/src/images/%E5%88%97%E8%BB%8A%E4%B8%8A%E7%9A%84%E5%A5%B3%E5%AD%A9.jpg?raw=true",
+         "description": "讓我看完的一段時間搭捷運都不敢滑手機"
       },
       {
        
-         "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-dapurmelodi-1109197.jpg",
-         "description": "看完肚子很餓"
+         "image": "https://github.com/FFF2832/wkmidterm/blob/master/src/images/%E5%85%A8%E7%9F%A5%E8%AE%80%E8%80%85%E8%A6%96%E8%A7%9201.jpg?raw=true",
+         "description": "webToon有漫畫也很好看"
       },
       {
         
-         "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-polina-tankilevitch-4522999.jpg",
-         "description": "攻略超實用，又想買遊戲了..."
+         "image": "https://s.eslite.dev/upload/product/l/2680915928002/ec893790.jpg",
+         "description": "主角們的羈絆真的很棒QQ該是收集全套了"
       },
       {
         
-         "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/nefix.jpg",
-         "description": "看完劇來看小說版，別有一番風味"
+         "image": "https://s.eslite.dev/Upload/Product/201406/l/635373928126233750.jpg",
+         "description": "高中時的回憶啊~"
          
       },
       {
         
-       "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/billie-eilish.jpg",
-       "description": "不用多說，寫真集就是讚"
+       "image": "https://img.ruten.com.tw/s2/c/07/68/22101590429544_975.JPG",
+       "description": "嗚嗚嗚，我的眼淚不值錢。"
      
     }
-   ]},
-   {
-      "title": "",
-      "horizontal": true,
-      "page":"2",
-      "data": [
-         {
-         
-         "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-oladimeji-ajegbile-2386687.jpg",
-         "description": "內容感人，很勵志!可以給4顆心吧"
-   
-         
-         },
-         {
-          
-            "image": "https://github.com/FFF2832/wkmidterm/blob/master/src/images/image_hobby.jpg?raw=true",
-            "description": "學到很多上課學不到的東西，實用型的~"
-         },
-         {
-            
-           
-            "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-dapurmelodi-1109197.jpg",
-            "description": "看完肚子很餓"
-         },
-         {
-           
-            "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-polina-tankilevitch-4522999.jpg",
-            "description": "攻略超實用，又想買遊戲了..."
-         },
-         {
-          
-            "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/nefix.jpg",
-            "description": "看完劇來看小說版，別有一番風味"
-            
-         },
-         {
-           "page":"6",
-          "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/billie-eilish.jpg",
-          "description": "不用多說，寫真集就是讚"
-        
-       }
-      ]}
-   
+   ]}
    
 ]

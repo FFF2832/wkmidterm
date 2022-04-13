@@ -15,7 +15,7 @@ import { extendTheme, useColorMode } from 'native-base';
 
 import AlbumScreen from '../screens/AlbumScreen';
 import DetailScreen from '../screens/DetailScreen';
-import HomeScreen from '../components/LogIn';
+
 import SettingsScreen from '../screens/SettingsScreen';
 import DTypeScreen from '../screens/DTypeScreen';
 import DisplaySettingScreen from '../screens/DisplaySettingScreen';

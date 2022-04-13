@@ -27,7 +27,7 @@ const DTypeList = ({ list, navigation }) => {
              marginTop={70}
              marginLeft={100}
              marginBack={2}
-            source={{uri:"https://github.com/FFF2832/wkmidterm/blob/master/src/images/Persnote.png?raw=true"}}
+            source={{uri:"https://github.com/FFF2832/wkmidterm/blob/master/assets/logo.png?raw=true"}}
             alt="1"
             />
            

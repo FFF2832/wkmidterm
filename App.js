@@ -5,9 +5,9 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { View,Text,Button,Image,StyleSheet} from 'react-native';
 import { NativeBaseProvider,AspectRatio } from 'native-base';
 
-import LogIn from './src/components/LogIn'
+
 import Navigation from './src/navigation';
-import Intro from './src/screens/Home/index'
+
 import AppIntroSlider from 'react-native-app-intro-slider';
 const App = () => {
   const [showRealApp,setshowRealApp]=useState(false)

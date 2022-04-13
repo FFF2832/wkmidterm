@@ -1,9 +1,9 @@
 import React , { useState }from "react";
 
 import { Box, Image, Pressable,Text,Center,useColorMode} from "native-base"
-import {Alert,TouchableOpacity} from "react-native"
+import {Alert,TouchableOpacity,StyleSheet} from "react-native"
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import {LinearGradient} from 'expo-linear-gradient';
 
 
 const HomeDetail = props => {
@@ -13,9 +13,13 @@ const HomeDetail = props => {
   const [like,updatelike]=useState(true)
   return (
     
-    <Box flex={1} justifyContent="center" _light={{bg:"#E2D5C3"}} _dark={{bg:"#4F5B57"}} > 
     
-    <Center  paddingLeft={30} paddingTop={2} paddingRight={5}
+     <LinearGradient start={{x: 0, y: 0}}
+    end={{x: 0, y: 1}}
+    colors={['#F6F3EE', '#ECDFCD', '#E2D5C3']} style={styles.container}>
+
+      <Box flex={1} justifyContent="center"  _dark={{bg:"#4F5B57"}} > 
+    <Center  paddingLeft={44} paddingTop={2} paddingRight={5} _dark={{bg:"#4F5B57"}}
       >
       <Box width={277} height={0.5} bgColor="#4F5B57" marginBottom={5} _dark={{bg:"#fff"}}></Box> 
       <Box  flex="1"  >
@@ -69,15 +73,34 @@ const HomeDetail = props => {
         
       </Pressable>
     </Center>
-    
     </Box>
+    </LinearGradient>
+    
   
   )
  
   
 };
 
-
+const styles = StyleSheet.create({
+  content: {
+    display: 'flex',
+    flexDirection: 'column',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // width: Dimensions.get('window').width,
+    // height: Dimensions.get('window').height,
+    // width: 390,
+    // height: 844,
+  },
+  linearGradient: {
+    flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 5
+  },
+ 
+});
 
 
 

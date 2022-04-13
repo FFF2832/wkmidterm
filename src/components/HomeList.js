@@ -56,14 +56,20 @@
 
 
 import React from "react";
-import {SectionList }from "react-native";
+import {SectionList ,StyleSheet}from "react-native";
 import { Text, FlatList,Center,Pressable,Box} from "native-base";
 import HomeDetail from "./HomeDetail";
 import sections from "../json/type_section.json";
+import {LinearGradient} from 'expo-linear-gradient';
 
 const Homelist = () => {
   const renderSectionHeader = ({section}) => (
-    <Center _light={{bg:"#E2D5C3"}} _dark={{bg:"#4F5B57"}}>
+    
+    
+     <LinearGradient start={{x: 0, y: 0}}
+    end={{x: 0, y: 1}}
+    colors={['#F6F3EE', '#ECDFCD', '#E2D5C3']} style={styles.container}>
+      <Center  _dark={{bg:"#4F5B57"}}>
       <Text fontSize={20} marginTop={5} marginBottom={0}  color="#4F5B57" fontWeight="bold"  _dark={{ color:"#fff"}}>
         {section.title} 
       </Text>
@@ -79,7 +85,10 @@ const Homelist = () => {
           keyExtractor={ item => item.title }
         />
       ) : null}
-    </Center>
+      </Center>
+      </LinearGradient>
+    
+    
   );
   const renderItem = ({ item, section }) => {
     if (section.horizontal) {
@@ -93,22 +102,43 @@ const Homelist = () => {
 
   return (
   
+  <LinearGradient start={{x: 0, y: 0}}
+    end={{x: 0, y: 1}}
+    colors={['#F6F3EE', '#ECDFCD', '#E2D5C3']} style={styles.container}>
     <SectionList 
      _dark={{bg:"#4F5B57"}}
-     _light={{bg:"#E2D5C3"}}
+    //  _light={{bg:"#E2D5C3"}}
       sections={sections}
-      contentContainerStyle={{ paddingHorizontal: 10 }}
+      contentContainerStyle={{ paddingHorizontal: 0 }}
       stickySectionHeadersEnabled={false}
       showsHorizontalScrollIndicator={false}
       renderSectionHeader={renderSectionHeader}
       renderItem={renderItem}
       keyExtractor={ item => item.title }
     />
-  
+  </LinearGradient>
   );
 };
 
-
+const styles = StyleSheet.create({
+  content: {
+    display: 'flex',
+    flexDirection: 'column',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // width: Dimensions.get('window').width,
+    // height: Dimensions.get('window').height,
+    // width: 390,
+    // height: 844,
+  },
+  linearGradient: {
+    flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 5
+  },
+ 
+});
 
 export default Homelist;
 
