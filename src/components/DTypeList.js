@@ -23,7 +23,7 @@ const DTypeList = ({ list, navigation }) => {
              width="172"
              height="54"
              flex="1"
-             position= "absolute" //style={{elevation:3}}
+             position= "absolute" style={{elevation:3}}
              marginTop={70}
              marginLeft={100}
              marginBack={2}
