@@ -1,7 +1,8 @@
 import React from "react";
 import { Box ,Image,Center,Text,HStack} from "native-base";
 import ListItem from "../components/ListItem"
-
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import AntDesign from "react-native-vector-icons/AntDesign";
 const SettingsScreen = ({ navigation }) => {
     return (
         <Box 
@@ -73,6 +74,15 @@ const SettingsScreen = ({ navigation }) => {
 
                 <ListItem title="主題設定"   navigation={navigation} destination="DisplaySetting" />
                 {/* <ListItem title="Account" navigation={navigation} destination="AccountSetting"/> */}
+                <HStack justifyContent="flex-start">
+                <Center width="30" height="30"   position= "absolute"  style={{elevation:2}} flex="1" borderRadius="9" marginTop={3} marginLeft={5} 
+        _           dark={{bg: "#4F5B57"}} _light={{bg:"#4F5B57"}}> 
+                <MaterialCommunityIcons name="history" color="#fff"  size={26} />
+                </Center>
+
+                <Text fontSize={15} marginLeft={60} marginTop={4}>歷史紀錄</Text>
+                
+                </HStack>
             </Box>            
         </Box>
 

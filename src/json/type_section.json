@@ -1,23 +1,24 @@
 [
     {
-    "title": "全部",
+    "title": "",
     "horizontal": true,
+    "page":"1",
     "data": [
        {
-       "page":"1",
+       
        "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-oladimeji-ajegbile-2386687.jpg",
        "description": "這本輕小說真厲害!"
 
        
        },
        {
-         "page":"2",
+         
           "image": "https://github.com/FFF2832/wkmidterm/blob/master/src/images/image_hobby.jpg?raw=true",
           "description": "這本書很好看!"
        },
        {
           
-         "page":"3",
+         
           "image": "https://raw.githubusercontent.com/FFF2832/wkmidterm/master/src/images/pexels-dapurmelodi-1109197.jpg",
           "description": "這本書很好看!"
        },
@@ -39,6 +40,7 @@
       
      }
     ]}
+  
     
     
  ]

@@ -15,6 +15,7 @@ const Homelist = () => {
         <FlatList
           horizontal={true}
           data={section.data}
+         
           renderItem={({ item }) => <HomeDetail album={item} />}
           showsHorizontalScrollIndicator={false}
           keyExtractor={ item => item.title }
@@ -26,7 +27,9 @@ const Homelist = () => {
     if (section.horizontal) {
       return null;
     }
+
     return <HomeDetail album={item} />
+    
     
   };
 

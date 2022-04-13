@@ -9,7 +9,7 @@ import Counter from"../components/Counter"
 const AlbumScreen = ({ navigation }) => {
   return (
     <Box>
-        
+      <Center bg="#fff" width="304" height="81" marginLeft={10}></Center>
       < AlbumList 
         list={albumData.albumList}
         navigation={navigation}
@@ -17,7 +17,7 @@ const AlbumScreen = ({ navigation }) => {
         bg="#E2D5C3"
         
       />
-      {/* <Box bg="#E2D5C3" width="400" height="500"></Box> */}
+      
       
       {/* <Counter/> */}
     </Box>
