@@ -13,11 +13,11 @@ const HomeDetail = props => {
   const [like,updatelike]=useState(true)
   return (
     
-    <Box flex={1} justifyContent="center" _light={{bg:"#E2D5C3"}} _dark={{bg:"#4F5B57"}}> 
+    <Box flex={1} justifyContent="center" _light={{bg:"#E2D5C3"}} _dark={{bg:"#4F5B57"}} > 
     
-    <Center  paddingLeft={50} paddingTop={2} paddingRight={10}
+    <Center  paddingLeft={30} paddingTop={2} paddingRight={5}
       >
-      <Box width={277} height={0.5} bgColor="#4F5B57" marginBottom={10} _dark={{bg:"#fff"}}></Box> 
+      <Box width={277} height={0.5} bgColor="#4F5B57" marginBottom={5} _dark={{bg:"#fff"}}></Box> 
       <Box  flex="1"  >
       <Image
           source={{uri: album.image}}
@@ -64,7 +64,7 @@ const HomeDetail = props => {
     </Center>
     <Center>
       <Pressable bgColor="#EA9C49" h={28} w={148} borderRadius={20} flex={1} alignItems="center" justifyContent="center" 
-      marginTop={66} marginBottom={12} marginRight={0} onPress={() => Alert.alert("編輯")}>
+      marginTop={50} marginBottom={12} marginRight={0} onPress={() => Alert.alert("編輯")}>
         <Text color="#fff">編輯</Text>
         
       </Pressable>

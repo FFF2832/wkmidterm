@@ -44,10 +44,11 @@ const AlbumDetail = ({ album, navigation }) => {
       marginX={0} marginBottom={2} marginTop={5}  shadow={2} flex={1}
       // _dark={{  borderWidth: 0.6 }}
     >
+      
       <Center>
       <VStack>
           <HStack>
-            <Center  width="304" height="167"  bg="#fff" borderRadius={7} _dark={{  bg:"#000"}} >
+            <Center  width="304" height="167"  bg="#B9D2C8" borderRadius={7}  >
             
             <Image
               source={{ uri: album.image }}
@@ -57,8 +58,8 @@ const AlbumDetail = ({ album, navigation }) => {
               borderRadius={7}
              
             /> 
-             <Center  width="304" height="46"  bg="#B9D2C8" borderRadius={7}  _dark={{  bg:"#000"}} >
-             <Text position= "absolute"    marginRight={50} >{album.title}</Text>
+             <Center  width="304" height="46"  bg="#B9D2C8" borderRadius={7}   >
+             <Text position= "absolute"  fontWeight="bold"  marginRight={50} _dark={{  color:"#4F5B57"}} color="#4F5B57">{album.title}</Text>
              </Center>
             </Center>
           </HStack>

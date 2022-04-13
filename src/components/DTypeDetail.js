@@ -34,7 +34,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
             
             <Center width="167" height="10"   position= "absolute"   flex="1"  margin="1"  marginTop={156} 
              bg="#B9D2C8" opacity="0.8" borderRadius="7">
-              <Text  color="#495551"  fontWeight="bold" opacity="2"   >{dtype.title}</Text> 
+              <Text  color="#000000"  fontWeight="bold" opacity="2"   >{dtype.title}</Text> 
             </Center>
           </Pressable>   
              
@@ -61,7 +61,7 @@ const DTypeDetail = ({ dtype, navigation }) => {
             
             <Center width="167" height="10"   position= "absolute"  flex="1"  margin="1"   marginTop={156} 
              bg="#B9D2C8" opacity="0.7"borderRadius="7" >
-              <Text  color="#495551"  fontWeight="bold" opacity="2" >{dtype.title2}</Text> 
+              <Text  color="#000000"  fontWeight="bold" opacity="2"  position= "absolute"  >{dtype.title2}</Text> 
             </Center>
            </Pressable>  
               

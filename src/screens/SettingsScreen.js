@@ -51,15 +51,17 @@ const SettingsScreen = ({ navigation }) => {
                 <Text color="#4F5B57" fontSize={12} fontWeight="bold"   _dark={{color:"#fff"}}>5</Text>
             </HStack> */}
 
-            <HStack  marginTop={50}>
-            <Center flexDirection="column" marginRight={10}>
+            <HStack  marginTop={10}>
+            <Center flexDirection="column" marginRight={3}>
             <Text color="#4F5B57" fontSize={12} fontWeight="bold"  _dark={{color:"#fff"}}>已收藏次數</Text>
             <Text color="#4F5B57" fontSize={15} fontWeight="bold"  _dark={{color:"#fff"}}>5</Text>
             </Center>
-            <Center flexDirection="column" marginRight={10}>
+            <Box w={0.5} h={10} bg="#4F5B57" marginLeft={3} marginRight={5} _dark={{bg:"#fff"}}></Box>
+            <Center flexDirection="column" marginRight={3}>
             <Text color="#4F5B57" fontSize={12} fontWeight="bold"  _dark={{color:"#fff"}}>已寫文章數</Text>
             <Text color="#4F5B57" fontSize={15} fontWeight="bold"  _dark={{color:"#fff"}}>5</Text>
             </Center>
+            <Box w={0.5} h={10} bg="#4F5B57" marginLeft={3} marginRight={5} _dark={{bg:"#fff"}}></Box>
             <Center flexDirection="column" >
             <Text color="#4F5B57" fontSize={12} fontWeight="bold"  _dark={{color:"#fff"}}>已加入時間</Text>
             <Text color="#4F5B57" fontSize={15} fontWeight="bold"  _dark={{color:"#fff"}}>5</Text>
@@ -76,11 +78,20 @@ const SettingsScreen = ({ navigation }) => {
                 {/* <ListItem title="Account" navigation={navigation} destination="AccountSetting"/> */}
                 <HStack justifyContent="flex-start">
                 <Center width="30" height="30"   position= "absolute"  style={{elevation:2}} flex="1" borderRadius="9" marginTop={3} marginLeft={5} 
-        _           dark={{bg: "#4F5B57"}} _light={{bg:"#4F5B57"}}> 
+        _           dark={{bg: "#4F5B57" }} _light={{bg:"#4F5B57"}}> 
                 <MaterialCommunityIcons name="history" color="#fff"  size={26} />
                 </Center>
 
                 <Text fontSize={15} marginLeft={60} marginTop={4}>歷史紀錄</Text>
+                
+                </HStack>
+                <HStack justifyContent="flex-start" marginTop={7}>
+                <Center width="30" height="30"   position= "absolute"  style={{elevation:2}} flex="1" borderRadius="9" marginTop={3} marginLeft={5} 
+        _           dark={{bg: "#4F5B57"}} _light={{bg:"#4F5B57"}}> 
+                <MaterialCommunityIcons name="file-account-outline" color="#fff"  size={26} />
+                </Center>
+
+                <Text fontSize={15} marginLeft={60} marginTop={4}>個人資料</Text>
                 
                 </HStack>
             </Box>            

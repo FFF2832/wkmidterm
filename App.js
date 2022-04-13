@@ -105,7 +105,7 @@ const slides = [
   },
   {
     key: 's3',
-    title: 'Let’s Start!',
+    title: '開始旅程吧!',
     text: '',
     image: {
       uri:
@@ -154,13 +154,15 @@ const styles= StyleSheet.create({
       elevation: 3,
       color:"#4F5B57",
       marginTop:100,
+      marginLeft:15,
       zIndex: 2,
 
   },
   introLogoStyle:{
-    width:191,
+    width:195,
     height:60,
     zIndex: 2,
+    marginLeft:15,
   }
 
 })

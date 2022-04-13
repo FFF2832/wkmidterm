@@ -7,9 +7,10 @@
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/logo.png",
-
+ 
       "resizeMode": "contain",
       "backgroundColor": "#E2D5C3"
+     
     },
     "updates": {
       "fallbackToCacheTimeout": 0
