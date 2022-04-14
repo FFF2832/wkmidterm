@@ -12,10 +12,10 @@ import {
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { StatusBar, Divider, Image, Input, HStack, Box } from 'native-base';
 import { extendTheme, useColorMode } from 'native-base';
+import ContentScreen from'../screens/ContentScreen';
 
-import AlbumScreen from '../screens/AlbumScreen';
 import DetailScreen from '../screens/DetailScreen';
-
+import AlbumScreen from '../screens/AlbumScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import DTypeScreen from '../screens/DTypeScreen';
 import DisplaySettingScreen from '../screens/DisplaySettingScreen';
@@ -379,6 +379,25 @@ const HomeStack = ({ navigation }) => {
           },
         })}
       />
+       <Stack.Screen
+        name="Content"
+        component={ContentScreen}
+        options={({ route }) => ({
+          title: "",
+          headerStyle: {
+            backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
+          },
+          headerTintColor: colorMode == 'light' ? 'black' : 'white',
+          headerStyle: {
+            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+          },
+          headerTitleStyle: {
+            color: colorMode == 'light' ? 'black' : 'white',
+            fontWeight: '400',
+            fontSize: 20
+          },
+        })}
+      />
     </Stack.Navigator>
   );
 }
@@ -416,10 +435,10 @@ const DTypeStack = ({ navigation }) => {
         }}
       />
       <Stack.Screen
-        name="Detail"
-        component={DetailScreen}
+        name="Content"
+        component={ContentScreen}
         options={({ route }) => ({
-          title: route.params.title,
+          title:"",
           headerStyle: {
             backgroundColor: colorMode == 'light' ? 'white' : '#4F5B57',
           },

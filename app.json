@@ -1,16 +1,14 @@
 {
   "expo": {
-    "name": "wk1proj",
-    "slug": "wk1proj",
+    "name": "team14appmidterm",
+    "slug": "team14appmidterm",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "https://github.com/zhiyu414/Imaa/blob/main/logo1.png?raw=true",
- 
       "resizeMode": "contain",
       "backgroundColor": "#E2D5C3"
-     
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -29,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Persnote app",
+    "githubUrl": "https://github.com/FFF2832/wkmidterm"
   }
 }

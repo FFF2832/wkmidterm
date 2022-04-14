@@ -13,6 +13,9 @@ const AlbumDetail = ({ album, navigation }) => {
       <Center>
       <VStack>
           <HStack>
+          <Pressable 
+          onPress={() => navigation.navigate('Content',album)}
+          > 
             <Center  width="304" height="167"  bg="#B9D2C8" borderRadius={7}  >
             
             <Image
@@ -27,6 +30,7 @@ const AlbumDetail = ({ album, navigation }) => {
              <Text position= "absolute"  fontWeight="bold"  marginRight={50} _dark={{  color:"#4F5B57"}} color="#4F5B57">{album.title}</Text>
              </Center>
             </Center>
+            </Pressable> 
           </HStack>
          
       </VStack>
@@ -37,3 +41,24 @@ const AlbumDetail = ({ album, navigation }) => {
   )};
 
 export default AlbumDetail;
+{/* <Pressable 
+          onPress={() => navigation.navigate('Detail', dtype)}
+          >
+          
+             <Image
+            margin="1"
+            width="167"
+            height="191"
+            padding="2"
+            borderRadius="7"
+            paddingRight={4}
+            
+            source={{ uri: dtype.image }}
+            alt="artist"
+            />
+            
+            <Center width="167" height="10"   position= "absolute"   flex="1"  margin="1"  marginTop={156} 
+             bg="#B9D2C8" opacity="0.8" borderRadius="7">
+              <Text  color="#000000"  fontWeight="bold" opacity="2"   >{dtype.title}</Text> 
+            </Center>
+          </Pressable>    */}

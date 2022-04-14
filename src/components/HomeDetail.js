@@ -63,8 +63,8 @@ const HomeDetail = props => {
           /> */}
           
           <Box width={277} height={0.5} bgColor="#4F5B57" marginTop={10} _dark={{bg:"#fff"}}></Box>   
-          
-        <Text marginTop={4}>{album.description}</Text>
+          <Box width={277} height={200}  marginTop={10} _dark={{bg:"#fff"}}><Text marginTop={4}>{album.description}</Text></Box>   
+        {/* <Text marginTop={4}>{album.description}</Text> */}
     </Center>
     <Center>
       <Pressable bgColor="#EA9C49" h={28} w={148} borderRadius={20} flex={1} alignItems="center" justifyContent="center" 
